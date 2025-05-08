@@ -19,5 +19,5 @@ jobs:
     job3:
         runs-on: ubuntu-latest
         steps:
-        - names: step 3
+        - name: step 3
           run: echo "hello from job 3"
