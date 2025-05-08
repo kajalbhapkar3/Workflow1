@@ -30,6 +30,7 @@ jobs:
     job4:
         name: job4
         runs-on: ubuntu-latest
+        Needs: [job1,job2]
         steps:
         - name: step 4
           run: |
