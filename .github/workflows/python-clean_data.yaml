@@ -1,13 +1,21 @@
-name: CI
+name: pythonworkflow
 
 on:
   workflow_dispatch
 
 jobs:
-  job1:
+  data_pipeline:
+    name: data_pipeline
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: |
-          echo ${{ github.workspace }}
-          echo $GITHUB_WORKSPACE
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: clean_data
+        run: |
+          pwd
+          ls -al
+          pwd
+          cd ModelCleaning
+          pip install pandas
+          pythin cleandata.py
+          
