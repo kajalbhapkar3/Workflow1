@@ -21,7 +21,7 @@ jobs:
         - name: step2
           run: |
               echo "hello from job 2"
-              echo "Today's date is: $(date)"
+              echo "uuuToday's date is: $(date)"
     job3:
         runs-on: ubuntu-latest
         steps:
