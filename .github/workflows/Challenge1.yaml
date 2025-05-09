@@ -10,9 +10,10 @@ jobs:
     steps:
       - name: setup
         run: |
-          echo "Today's date is:" date
-          echo "Working Directory:" pwd
-          echo "Directory Contents:" ls -al
+          date
+          pwd
+          echo "Directory Contents:"
+          ls -al
  
   job2:
     name: job2
